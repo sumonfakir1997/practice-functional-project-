@@ -41,7 +41,7 @@ const Arrays = () => {
 
     // console.log("num_arrays",num_arrays)
 
-  const  myarr = num_arrays.join() // join gole 
+//   const  myarr = num_arrays.join() // join gole 
 
 //   console.log("myarr", myarr)
 
@@ -60,7 +60,7 @@ console.log("index of ",num_arrays[4]) // ay khane num_arrays[4] dice mane ans 4
 // console.log("num_arrays incloude check kora ", num_arrays.includes(6)) // se 10 khuje pai nah tai false dice  abr  includes er value 6 diye try korci sa true dice mane ja khuje paice 
 
 
-console.log("every ",num_arrays.every())
+// console.log("every ",num_arrays.every())
 
 
 
