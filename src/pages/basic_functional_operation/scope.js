@@ -17,17 +17,27 @@ const Scope = () => {
     //  ay khane function er poriborte loop er modde loop etc thakte pare sob kichui same
   };
 
-//   one();
+  //   one();
 
 
-  if(true) {
-
+  if (true) {
     const my_name = 'sumon'
-    if(my_name === 'sumon'){
-        console.log(`${my_name}`)
+    if (my_name === 'sumon') {
+      console.log(`${my_name}`)
     }
-
   }
+
+  const varr = function (num)  {  // eta ka expression bole 
+      return num + 5;
+  }
+
+  varr(5); // ay function call sob  somay de3celar er nicha ei korte hba na hoy error show korbe 
+
+  function addOne(number) {
+    return number * 5;
+  }
+  addOne(5) // ay function ami upore nicha  call korle o kono problem nai 
+
 
 
   return (
@@ -35,5 +45,5 @@ const Scope = () => {
       <Box>hello</Box>
     </>
   );
-};   
+};
 export default Scope;
