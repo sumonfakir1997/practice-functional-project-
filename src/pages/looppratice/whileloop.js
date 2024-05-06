@@ -80,13 +80,33 @@ const home = () => {
 
 
 
+    const sum = [1, 2, 3, 4, 5, 6, 7, 8, 9] //do while loop er first e ekta kaj sa kore then condition check korbe mane starting e sa ekta kaj korbei 
+    let i = 0;
+    do {
+
+        console.log(sum[i])
+        i++;
+    } while (i < sum.length);
 
 
 
+    const name = "sumon" // ay khane try kora hoyca string er modde do while loop used kora jasce kina 
+    let j = name.length - 1;
+
+    do {
+        console.log(name[j])
+        j--;
+    } while (j >= 0)
 
 
+    const nams = ['sumon', 'fakir', 'js', 'react', 'next js'] // ay khane ekta array niye try kora hoyca 
 
+    let k = nams.length - 1;
 
+    do {
+        console.log(nams[k])
+        k--;
+    } while (k >= 0)
 
 
 
