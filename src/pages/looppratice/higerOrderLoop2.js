@@ -43,7 +43,7 @@ const HigerOrderLoop = () => {
         {
             title: 'book two',
             genra: 'fiction',
-            pushlish: 1980,
+            pushlish: 2013,
             edition: 2005
         },
 
@@ -89,13 +89,19 @@ const HigerOrderLoop = () => {
 
 
     const book = books.filter((boi) => { // filter er modde return must  be likte hba e sara kaj data return kore nah 
-        return boi.edition === 2013;
+        return boi.pushlish >= 2013 && boi.genra === 'fiction';
     })
 
-    console.log("book",book)
+    // console.log("book",book)
 
 
+    const chaning = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+    const newChaning = chaning.map((value) => value * 2)
+        .map((value) => value + 5)
+        .filter((value) => value >= 20)
+
+        console.log("newChaning",newChaning)
 
 
 
