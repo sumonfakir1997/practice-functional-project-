@@ -97,11 +97,71 @@ const HigerOrderLoop = () => {
 
     const chaning = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-    const newChaning = chaning.map((value) => value * 2)
+    const newChaning = chaning
+        .map((value) => value * 2)
         .map((value) => value + 5)
         .filter((value) => value >= 20)
 
-        console.log("newChaning",newChaning)
+    // console.log("newChaning", newChaning)
+
+    const sum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 100]
+
+
+    const newsum = sum.reduce(function (acc, curval) {
+        // console.log(`acc is ${acc} + ${curval}`)
+        return acc + curval
+    }, 0);
+
+    // console.log("newsum", newsum)
+
+
+    const newsum2 = sum.reduce((acc, cur) => {
+        console.log(`acc is sum ${acc} + ${cur}`)
+        return acc + cur
+    }, 0)
+
+    // console.log(newsum2)
+
+
+
+    const cart = [
+        {
+            itemName: "tshart",
+            price: 199
+        },
+        {
+            itemName: "tshartM size",
+            price: 599
+        },
+        {
+            itemName: "paijama",
+            price: 500
+        },
+        {
+            itemName: "mobile",
+            price: 5000
+        },
+        {
+            itemName: "i phone 15Max",
+            price: 11000
+        },
+        {
+            itemName: "CPU",
+            price: 12000
+        },
+        {
+            itemName: "Monitor",
+            price: 5600
+        }
+    ]
+
+
+    const total_amonut_of_users = cart.reduce((acc, item) => {
+        // console.log(`cart value of acc ${acc} and current value ${item.price} name is user card ${item.itemName}`)
+        return acc + item.price
+    }, 0)
+
+    console.log('user cart total', total_amonut_of_users)
 
 
 
